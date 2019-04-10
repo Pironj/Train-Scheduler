@@ -1,0 +1,45 @@
+.form-group, #submit-form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#submit-form {
+    margin-bottom: 10px;
+    background-color: midnightblue;
+    color: aliceblue;
+}
+#header {
+    margin-bottom: 20px;
+    height: 400px;
+}
+#results {
+    margin-bottom: 30px;
+}
+
+#inputData {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.jumbotron {
+    background-image: url("http://subcusa.com/wp-content/uploads/2019/01/iStock-953271728-e1548274107465.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.25rem;
+    height: 100%;
+}
+#writing {
+    color: rgb(241, 111, 18);
+}
+.display-4 {
+    font-weight: 600;
+    text-shadow: 1px 1px #000;
+    
+}
+.lead {
+    font-size: 1.7rem;
+    font-weight: 450;
+    text-shadow: 1px 1px #000;
+}
+.card-header {
+    background-color: midnightblue;
+    color: aliceblue;
+}

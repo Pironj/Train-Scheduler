@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- LINK TO LOCAL CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+    <title>Train-Scheduler</title>
+</head>
+
+<body>
+    <div class="container" id="header">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container" id="writing">
+                <h1 class="display-4">TrainTastic Schedule Watcher</h1>
+                <p class="lead">A Comprehensive Directory of Train Schedules in Real-Time</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="results">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">Current Train Schedule</div>
+                    <div class="col" id="watching"># Watching:</div>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="inputData">
+        <div class="card">
+            <div class="card-header">
+                Add Train
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="train-name">Train Name</label>
+                    <input type="text" class="form-control" id="name-input" aria-describedby="nameHelp"
+                        placeholder="Example: Polar Express">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination-input" placeholder="North Pole">
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label" for="first-train">First Train Time (HH:mm-military time)</label>
+                    <input type="text" class="form-control" id="first-train-input" placeholder="00:00">
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label" for="frequency">Frequency (min)</label>
+                    <input type="number" class="form-control" id="frequency-input">
+                </div>
+                <button id='submit-form' type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- LINK TO FIREBASE GOES HERE -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
