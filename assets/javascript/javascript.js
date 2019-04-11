@@ -88,7 +88,7 @@ $(document).ready(function () {
     });           
     
     database.ref().on("child_added", function (childSnapshot) {
-        console.log(childSnapshot);
+        console.log(childSnapshot.val());
         console.log("this is the child of snapshot.val")
         console.log(childSnapshot.val().firstTrainTime);
         
@@ -116,7 +116,7 @@ $(document).ready(function () {
                 $('<td>').text(childSnapshot.val().trainName),
                 $('<td>').text(childSnapshot.val().destination),
                 $('<td>').text(childSnapshot.val().frequency),
-                $('<td>').text(nextArrival.format("hh:mm")),
+                $('<td>').text(nextArrival.format("h:mm a")),
                 $('<td>').text(minutesAway),
             );
             $("tbody").append(newRow);
